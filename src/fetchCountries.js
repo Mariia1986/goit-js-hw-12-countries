@@ -1,3 +1,4 @@
+import notifError from './notification.js'
  const URL= 'https://restcountries.eu/rest/v2/name/'
 
 function fetchCountries(searchQuery) {
@@ -6,6 +7,8 @@ function fetchCountries(searchQuery) {
     response => {
       return response.json();
     },
+  ).catch(notifError('Ошибка','Страны с таким именем не существует')
+    
   );
 }
 export default fetchCountries
