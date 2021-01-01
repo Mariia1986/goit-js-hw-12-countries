@@ -9,7 +9,7 @@ const refs = {
   countryBox: document.querySelector('.countrycount'),
 };
 
-refs.input.addEventListener('input', debounce(search, 2000));
+refs.input.addEventListener('input', debounce(search, 500));
 refs.input.addEventListener('click', refreshCountries);
 function search(e) {
   const name = e.target.value;
