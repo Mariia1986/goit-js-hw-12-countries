@@ -6,7 +6,7 @@ import '@pnotify/core/dist/BrightTheme.css';
 
 function notifError(title, text) {
     
-    defaults.delay = 2000;
+    defaults.delay = 3000;
     error({
         title:title,
         text: text,
