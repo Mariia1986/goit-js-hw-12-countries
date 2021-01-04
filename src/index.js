@@ -22,7 +22,7 @@ function search(e) {
   }
   fetchCountries(name)
     .then(arr => {
-      if (arr.length > 1 && arr.length < 10) {
+      if (arr.length > 1 && arr.length <= 10) {
         rendercountrylist(arr);
       } else {
         if (arr.length === 1) {
